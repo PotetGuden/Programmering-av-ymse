@@ -18,3 +18,9 @@ Git commands
 
     //pusher filene inn til github.com, (kommer tilbake med "origin master" hva det egt betyr)
     git push origin master
+
+    //lister ale branches
+    git branch
+
+    //for å lage en branch
+    git branch "navn"
