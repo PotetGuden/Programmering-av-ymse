@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<p id="test"></p>
+
+
+
+<script>
+
+    var outputP = document.getElementById("test");
+    
+    alert("Nå skal vi finne ut av din BMI");
+
+    var vekt = parseInt(prompt("skriv inn din vekt i kg"));
+    var høyde = parseFloat(prompt("skriv inn høyde i meter"));
+    var BMISkala = parseFloat(vekt / (høyde*høyde)).toPrecision(4);
+
+    var vektStatus = ["Undervektig", "Normalvektig", "Overvektig","Tjukkas"];
+    var enn;
+
+
+    outputP.innerHTML += `${vektStatus[BMISkala]} <br>`;
+
+    
+    
+
+
+
+
+/*
+    if (BMISkala <= 18,4){
+        enn = vektStatus[0];        
+    } else if(BMISkala >= 18,5 && BMISkala <= 24,9){
+        enn = vektStatus[1];
+    } else if(BMISkala >= 25,2 && BMISkala <= 30,2){
+        enn = vektStatus[2];
+    } else {
+        enn = vektStatus[3];
+    }
+*/
+
+
+    outputP.innerHTML += `Din BMI ligger på: ${BMISkala} og du er ${enn}`;
+
+</script>
+
+
+
+</body>
+</html>

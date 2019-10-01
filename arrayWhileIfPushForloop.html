@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<p id="output"></p>
+
+
+
+
+
+
+<script>
+
+
+    let inputOrd = [];
+
+    let outputP = document.getElementById("output");
+
+    let whileloop = true;
+
+    
+    while(whileloop == true){
+
+        let ordPrompt = prompt("Legg til et ord i arrayet");
+        inputOrd.push(ordPrompt);
+        let fortsettPrompt = prompt("Ønsker du å fortsette?");
+
+            if(fortsettPrompt === "ja"){
+                
+            }else {
+                break;
+            }
+    }
+
+
+    for (i = 0; i < inputOrd.length; i++){
+        outputP.innerHTML += `${inputOrd[i]} `;
+    }
+
+
+</script>
+
+
+</body>
+</html>

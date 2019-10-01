@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    
+
+<ul id="ordM"></ul>
+
+
+<script>
+
+    //Array
+    let ordPåM = ["Mamma", "Mann", "Maske", "Måke", "Måne", "Makan", "Måle", "Male", "Mekke", "Murstein", "Miks", "Motorsykkel"];
+    //Lengden av array som en Integer
+    let antallOrd = ordPåM.length;
+    //Får å hente inn id til en UL på nettside
+    let outputUl = document.getElementById("ordM");
+    //kjører igjennom en loop for å printe ut hver variabel i Array ordPåM
+    for(i = 0; i < antallOrd; i++){
+        outputUl.innerHTML += `<li>${ordPåM[i]}</li>`;
+    }
+
+
+</script>
+
+
+</body>
+</html>

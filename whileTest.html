@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+<p id="outputP"></p>
+
+
+
+<script>
+
+
+
+    let outputP = document.getElementById("outputP");
+
+    let dusteOppgave = false;
+
+    let antallJa = 0;
+   
+    while(dusteOppgave == false){
+        let inputSvar = prompt("Vil du fortsette?");
+        antallJa ++;
+        
+        
+        if (inputSvar != "ja"){
+            outputP.innerHTML = `Antall ganger du har skrevet ja: ${antallJa}`;
+            dusteOppgave = true;
+            } else{
+                alert("Du har skrevet ja: " + antallJa);   
+        }
+    } 
+
+    
+
+
+
+</script>
+
+</body>
+</html>

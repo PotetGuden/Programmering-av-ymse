@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+<ul id="TusenTall"></ul>
+
+
+
+
+
+<script>
+    //tomt array
+    let tusenTall = [];
+    //henter info om UL
+    let outputUl = document.getElementById("TusenTall");
+    // .length funker ikke her fordi den tror lengden er 0 siden man starter med det?
+    var antallTall = tusenTall.length;
+
+    //setter inn 1000 random tall inn i array
+    for(i = 0; i < 1000; i++){
+        tusenTall.push(Math.floor(Math.random()*1000));
+    }
+    //Printer ut array i UL
+    for(i = 0; i < 1000; i++){
+        outputUl.innerHTML +=`${tusenTall[i]} `;
+    }
+
+
+
+</script>
+
+</body>
+</html>
