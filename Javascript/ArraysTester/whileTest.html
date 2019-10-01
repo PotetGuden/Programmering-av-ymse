@@ -7,7 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    
 
 
 <p id="outputP"></p>
@@ -20,18 +19,18 @@
 
     let outputP = document.getElementById("outputP");
 
-    let dusteOppgave = false;
+    let kjøreWhileLoop = false;
 
     let antallJa = 0;
    
-    while(dusteOppgave == false){
+    while(kjøreWhileLoop == false){
         let inputSvar = prompt("Vil du fortsette?");
         antallJa ++;
         
         
         if (inputSvar != "ja"){
             outputP.innerHTML = `Antall ganger du har skrevet ja: ${antallJa}`;
-            dusteOppgave = true;
+            kjøreWhileLoop = true;
             } else{
                 alert("Du har skrevet ja: " + antallJa);   
         }

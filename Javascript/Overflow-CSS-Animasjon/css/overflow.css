@@ -1,0 +1,106 @@
+#mid-tekst{
+    border:2px solid black;
+    width: 300px;
+    height: 500px;
+    background-color: antiquewhite;
+    position: relative;
+    top:100px;
+    left:40%;
+    overflow: scroll;
+}
+
+ li:hover{
+     background-color: lightblue;
+ }
+  
+.left {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    height: 100%; 
+    position: fixed; 
+    overflow: auto; 
+}
+
+.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+a li{
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    
+}
+
+.top{
+    display: inline;
+    position: relative;
+    top:2%;
+    left:43%;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.første{
+    margin:0;
+    padding:0;
+}
+
+.tredje{
+    margin:0;
+    padding:0;
+    width: 30%;
+    height:50%;
+    position: relative;
+    top: 20%;
+    left: 40%;
+    background-color: lightcyan;
+}
+
+/* The animation code */
+@keyframes example {
+    0%   {background-color:red; left:26%; top:0px;}
+    25%  {background-color:yellow; left:73%; top:0px;}
+    50%  {background-color:blue; left:73%; top:500px;}
+    75%  {background-color:green; left:26%; top:500px;}
+    100% {background-color:red; left:26%; top:0px;}
+  }
+  
+  /* The element to apply the animation to */
+  .animasjon {
+
+    border-radius:50%;
+    width: 95px;
+    height: 95px;
+    position: relative;
+    background-color: white;
+    animation-name: example;
+    animation-duration: 1s;
+    left: 40%;
+    animation-iteration-count: 10;
+
+  }
+
+#ExampleAnimasjon{
+width: 100px;
+height: 100px;
+background: green;
+
+-webkit-transition: width 2s, height 2s;
+transition: width 2s, height 2s;
+
+position: relative;
+left: 50%;
+text-align: center;
+
+}
+
+#ExampleAnimasjon:hover{
+    width: 300px;
+    height: 300px;
+}
