@@ -24,3 +24,4 @@ Git commands
 
     //for å lage en branch
     git branch "navn"
+
