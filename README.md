@@ -1,9 +1,7 @@
 # testing1
 Testing github
 
-
-
-Legg til forklaringer..
+Ting kan være litt rotete, se bort ifra de :)
 
 
 Git commands
