@@ -7,6 +7,7 @@ Legg til forklaringer..
 
 
 Git commands
+
     //Sjekker status på alle evt endringer
     git status
 
@@ -19,7 +20,7 @@ Git commands
     //pusher filene inn til github.com, (kommer tilbake med "origin master" hva det egt betyr)
     git push origin master
 
-    //lister ale branches
+    //lister alle branches
     git branch
 
     //for å lage en branch
