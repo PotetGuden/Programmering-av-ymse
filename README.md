@@ -7,7 +7,7 @@ Legg til forklaringer..
 
 
 Git commands
-    // Sjekker status på alle evt endringer
+    //Sjekker status på alle evt endringer
     git status
 
     //For å gjøre klar filer
