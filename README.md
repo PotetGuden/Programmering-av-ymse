@@ -17,7 +17,7 @@ Git commands
     //bruk -m for å legge til en message som er viktig!
     git commit -m " forklarende melding om hva man har gjort "
 
-    //pusher filene inn til github.com, (kommer tilbake med "origin master" hva det egt betyr)
+    //pusher filene inn til github.com, (master er branchen jeg vil bruke, kunne brukt en annen branch, men da må man skrive navn på den)
     git push origin master
 
     //lister alle branches
