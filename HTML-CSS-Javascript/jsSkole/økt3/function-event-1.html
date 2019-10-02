@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function and events 1</title>
+    <!--
+        Hovedtemaer - information on army type:
+        - function
+        - click event
+        - click on image to get information
+    -->
+</head>
+<body>
+
+<img src="images/catapult.png" alt="Katapult" onclick="myFunctionCatapult()">  <!-- viser et bilde fra en annen mappe, med en onclick event -->
+
+<p id="katapult"></p>    <!-- Dette er en p tag som har id= katapult som jeg henter inn senere fra myFunctionCatapult for å legge til tekst -->
+
+<img src="images/giant.png" alt="Giant" onclick="myFunctionGiant()">
+
+<p id="giant"></p>
+
+<img src="images/knight-horse.png" alt="Knight Horse" onclick="myFunctionKnightHorse()">
+
+<p id="knightHorse"></p>
+
+<img src="images/knight.png" alt="Knight" onclick="myFunctionKnight()">
+
+<p id="knight"></p>
+
+
+<script>
+
+function myFunctionCatapult(){                                                     // lager en funksjon
+document.getElementById("katapult").innerHTML = "Dette er en katapult";            // henter inn fra id=katapult og legger alt etter =
+}
+function myFunctionGiant(){
+document.getElementById("giant").innerHTML = "Dette er en Giant";
+}
+function myFunctionKnightHorse(){
+document.getElementById("knightHorse").innerHTML = "Dette er en Knight Horse";
+}
+function myFunctionKnight(){
+document.getElementById("knight").innerHTML = "Dette er en Knight";
+}
+
+
+</script>       
+</body>
+</html>

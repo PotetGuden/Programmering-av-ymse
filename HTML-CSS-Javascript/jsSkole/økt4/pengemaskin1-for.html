@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+    <!--En for-løkke for å generere x antall sedler på nettside-->
+
+<div id="money-output"></div>
+
+<script>
+    
+    var money = `<img src="20kr-revers.png">`;
+    var money2 = `<img src="500_front.jpg>`;
+    var money3 = `<img src="1000:front.jpg`;
+
+    var randomMoney = Math.floor(Math.random()* 3 + 1)
+
+    if(randomMoney === 1){
+        randomMoney === money;
+    }else if (randomMoney === 2){
+        randomMoney === money2;
+    }else{
+        randomMoney === money3;
+    }
+
+    var moneyOutput = document.getElementById("money-output");
+
+    for(var teller = 0; teller < 100; teller++){
+        moneyOutput.innerHTML += randomMoney;
+    }
+
+   
+
+
+
+</script>
+    
+</body>
+</html>

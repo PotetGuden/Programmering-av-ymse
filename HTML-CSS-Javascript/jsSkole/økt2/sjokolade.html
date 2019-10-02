@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<p id="sjokkis">Sjokolade</p>
+<p id="dårligsjokkis"></p>
+
+<script>
+
+
+    //deklarert variabel
+    let favouriteChocolate = "Chocoblinx";
+
+    let favouriteChocolateD = document.getElementById("sjokkis");
+
+    favouriteChocolateD.innerHTML = favouriteChocolate;
+
+    // nytt spørsmål og ta det svaret og legge inn i en id
+    // man kan ha 2 variabler i en prompt hvor første er spørsmål og andre er foråndslagd tekst i tekst boksen
+    let spm = prompt("Hvilken sjokolade liker du minst?", "Skriv her ..");
+
+    let svar = document.getElementById("dårligsjokkis");
+
+    svar.innerHTML = spm;
+
+
+    if (svar.innerHTML === ""){
+        svar.innerHTML = "Du må skrive noe.";        
+    } else {
+        svar.innerHTML = svar.innerHTML;
+    }
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Finn feilene</title>
+</head>
+<body>
+    
+    <input id="add-random-number-btn" type="button" value="Legg til et tilfeldig tall">
+    
+    <ul id="output-ul"></ul>
+    
+    <script>
+        
+        //var addRandomNumberBtn = Document.getElementById("add-random-number-btn");
+        //var outputUl = Document.getElementById("output-ul");
+        
+        //addRandomNumberBtn.onclikc = addRandomNumber;
+            
+        //function addRandomNumberBtn(){
+        //    var randomNumber = Math.Floor( Math.Random() * 100);
+        //    outputUl.innerHTML += `<li>{randomNumber}</li>`;
+        //}    
+        
+
+
+        var addRandomNumberBtn = document.getElementById("add-random-number-btn");
+        var outputUl = document.getElementById("output-ul");
+        
+        addRandomNumberBtn.onclick = outputUl.addRandomNumber;
+            
+        function addRandomNumberBtn(){
+            var randomNumber = Math.floor( Math.random() * 100);
+            outputUl.innerHTML += `<li>${randomNumber}</li>`;
+        }    
+        
+    </script>
+    
+</body>
+</html>

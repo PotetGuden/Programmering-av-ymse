@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+<button onclick="myFunction(this,'red')">Klikk her</button>
+<p onclick="myfunction()">Click me to change my text color.</p>
+
+<div id="box"></div>
+<button id="yes">yes</button>
+<button id="no">no</button>
+
+<br> <br> <br> <br>
+<input type="button" id="knapp" value="Vis melding">
+
+
+
+<script>
+
+
+var colors = ["red", "blue", "green", "yellow"],   // velger mellom  farger
+    index = 0;                                     // index av første farge
+    
+document.getElementById("yes").onclick = function() {
+  document.getElementById("box").style.background = colors[index];  //Endrer farger i en class kalt box utifra colors tabellen
+    index = (index + 1) % colors.length;             // increment index to point to the next color (if it goes beyond the length of the coices array get it back to 0 using the modulo %)
+    // if (place ===colorList.length) place=0;       // kan også bruke denne, litt mer forståelig 
+ // document.body.style.background = colors[index];  // setter bakgrunn til fargene i colors variablen i BODY tag
+}
+
+
+function  asd(){
+  let colors = [0,1,2];
+  console.log(colors);
+}
+asd;
+
+</script>    
+
+
+
+</body>
+</html>

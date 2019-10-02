@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+<script>
+
+
+
+
+
+var riktigTall = Math.floor(Math.random() * 10);
+
+
+while( gjetning != true ){
+    var gjetning = false;
+    var userInput = prompt("Gjett et tall mellom 0 og 10");
+
+    if(parseInt(userInput) === riktigTall){
+        gjetning = true;
+        alert("Du har svart riktig");
+    }else {
+        alert("feil svar, prøv igjen");
+    }
+}
+
+
+</script>
+
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    
+    <ul id="output-ul"></ul>
+    
+    <script>
+    
+
+        let outputUl = document.getElementById("output-ul");
+
+        let musicArray = ["Let's shake", "Aha, yes i see that!", "Oh, no!", "Is that an orange or an apple!"];
+
+        outputUl.innerHTML = musicArray;
+
+        for (var i=0; i< musicArray.length ; i++){
+            outputUl.innerHTML += `<li>${musicArray[i]}</li>`;
+        }
+    
+    </script>
+    
+</body>
+</html>

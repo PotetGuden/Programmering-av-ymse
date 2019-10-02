@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    
+    <div id="output-div"></div>
+    
+    <script>
+    
+
+        let outputDiv = document.getElementById("output-div");
+        let krimArray = ["Snømannen", " Menn som hater kvinner", " Kvinner som hater menn"];
+
+        document.getElementById("output-div").innerHTML = krimArray[2];
+        document.getElementById("output-div").innerHTML += `<p>${krimArray[0]}</p>`;
+        outputDiv.innerHTML += `
+            <p>${krimArray[1]}</p>
+            <p>${krimArray}</p>
+        `
+
+
+        
+    
+    </script>
+    
+</body>
+</html>

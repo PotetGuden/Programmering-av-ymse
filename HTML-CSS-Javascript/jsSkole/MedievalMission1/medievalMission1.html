@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>        
+        <title>Medieval Mission 1</title>
+    </head>
+    
+    <body>        
+        
+        <h1>Din middelalderhær</h1>
+
+        <!--
+            *******
+            Legg til 3 <div> (1 per krigerklasse) og evt. eksempelvis <h3> for å skrive ut ut informasjon
+            *******            
+        -->
+        <h2 id="antallKjemper"></h2>
+        <div id="giant">
+
+
+
+        </div>
+        <h2 id="antallHester"></h2>
+        <div id="knightHorse">
+
+
+
+        </div>
+        <h2 id="antallRidder"></h2>
+        <div id="knight">
+
+
+
+        </div>
+
+
+
+
+
+        <script>
+            
+            /*  
+                *******
+                Her skriver du JavaScripten. Evt. kan du flytte JavaScript til egen fil.
+                *******
+            */
+            
+            alert("Info; du skal nå få bygge opp din middelalder hær. \nDu kommer til å bli spurt om antall krigere du ønsker av hvert slag.")
+
+
+            var antRiddere = parseInt(prompt("Hvor mange riddere ønsker du?"));
+            var antGiant = parseInt(prompt("Hvor mange kjemper ønsker du?"));
+            var antHester = parseInt(prompt("Hvor mange hester ønsker du?"));
+
+            var printRidder = document.getElementById("knight");
+            var printRidder2 = document.getElementById("knight").innerHTML = `<img src="images/knight.png">`;
+            var printGiant = document.getElementById("giant");
+            var printHest = document.getElementById("knightHorse");
+
+            document.getElementById("antallRidder").innerHTML = `Antall riddere: ${antRiddere}`;
+
+            for(antall=0; antall < antRiddere; antall++){
+                printRidder2 += printRidder2 + 1;
+            }
+
+
+            document.getElementById("antallKjemper").innerHTML = `Antall Kjemper: ${antGiant}`;
+
+            for(i=0; i < antGiant; i++){
+                printGiant.innerHTML += `<img src="images/giant.png">`;
+
+            }
+
+            document.getElementById("antallHester").innerHTML = `Antall Hester: ${antHester}`;
+
+            for(i=0; i < antHester; i++){
+                printHest.innerHTML += `<img src="images/knight-horse.png">`;
+            }
+        </script>
+        
+    </body>
+    
+</html>
+
+

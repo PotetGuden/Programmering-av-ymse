@@ -1,0 +1,8 @@
+#box {
+    width: 200px;
+    height: 200px;
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(187, 104, 104), rgba(7, 6, 6, 0.067))
+}

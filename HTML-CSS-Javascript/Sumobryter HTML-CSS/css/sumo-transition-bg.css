@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    background-color: rgb(20,20,20);
+}
+
+#animation-container{
+    width: 978px;
+    height: 660px;
+    border: 1px solid rgb(0,50,50);
+    position: relative;
+    margin:auto;
+    background-color: rgb(0,200,200);
+    overflow: hidden;
+    
+}
+
+#animation-container:hover #sumo1{
+    right:0px;
+
+}
+
+/* kan gjøre flere forskjellige animasjoner i samme div samtidig */
+#animation-container:hover #sumo2{
+    left:-50px;
+    transform: scaleX(-1);
+}
+
+/* for at alle bilder inne i div skal gjøre noe */
+#animation-container:hover img{
+    right:0px;
+}
+
+
+
+
+
+/*
+#sumo1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    margin:-60px 0 0 -60px;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+*/
+
+#sumo1{
+    width: 500px;
+    height: 400px;
+    position:absolute;
+    right:-450px;
+    bottom: 0px;
+    transition-property: right;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+}
+
+
+#sumo2{
+    width: 500px;
+    height: 400px;
+    position:absolute;
+    left:-450px;
+    bottom: 0px;
+    transition-property: left;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+}
+/*
+#sumo1:hover{
+    right:0px;
+}
+*/

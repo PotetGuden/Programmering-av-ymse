@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function and events</title>
+    <!--
+        Hovedtemaer - Build your army:
+        - function
+        - click event
+        - add image when button clicked
+    -->
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <h2>Trykk på en av knappene for å lage en eller fler figurer</h2><br><br>
+
+    <button id="catapult" onclick="makeACatapult()">Trykk her for en Katapult</button><br><br>
+<div id="test">
+    <p id="catapultImg"></p>
+</div>
+    <button id="giant" onclick="myFunctionGiant()">Trykk her for en Giant</button><br><br>
+
+    <p id="giantImg"></p>
+
+    <button id="knightHorse" onclick="myFunctionKnightHorse()">Trykk her for en Knight Horse</button><br><br>
+
+    <p id="knightHorseImg"></p>
+
+    <button id="knight" onclick="myFunctionKnight()">Trykk her for en Knight</button><br><br>
+
+    <p id="knightImg"></p>
+
+
+
+<div>
+
+    <section>
+        <input type="button" id="addKnightbutton" value="Add knight to army">
+    </section>
+
+    <main>
+
+        <div id="knights-div">
+            <p id="asdasd"></p>
+    </main>
+
+
+</div>
+
+
+
+
+
+
+
+<script>
+
+
+    var counter = 0;
+
+
+    var addKnightBtn = document.getElementById("addKnightbutton");
+    addKnightBtn.onclick = addKnight;
+
+    var knightsDiv = document.getElementById("knights-div");
+
+    function addKnight(){
+        knightsDiv.innerHTML += '${counter}<img src="images/knight.png">';
+        counter++;
+    }
+
+
+
+
+
+    function makeACatapult(){
+        var x = document.createElement("IMG");
+            x.setAttribute("src", "images/catapult.png");
+            document.body.appendChild(x);
+    }
+    function myFunctionGiant(){
+        var x = document.createElement("IMG");
+            x.setAttribute("src", "images/giant.png");
+            document.body.appendChild(x);
+    }
+    function myFunctionKnightHorse(){
+        var x = document.createElement("IMG");
+            x.setAttribute("src", "images/knight-horse.png");
+            document.body.appendChild(x);
+    }
+    function myFunctionKnight(){
+        var x = document.createElement("IMG");
+            x.setAttribute("src", "images/knight.png");
+            document.body.appendChild(x);
+    }
+</script>    
+</body>
+</html>

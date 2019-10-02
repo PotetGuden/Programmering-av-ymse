@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <!--En løkke for å generere x antall sedler på nettside, men vi lar brukeren få fortelle oss hvor mange brukeren ønsker-->
+
+<div id="money-output"></div>
+
+<script>
+
+    var moneyOutput = document.getElementById("money-output");
+
+    var money = `<img src="1000_front.jpg">`;
+
+    var numberOfBills =parseInt( prompt("Hvor mange tusenlapper ønsker du?"));
+
+    for(teller = 0; teller < numberOfBills; teller++){
+        moneyOutput.innerHTML += money; 
+    }
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

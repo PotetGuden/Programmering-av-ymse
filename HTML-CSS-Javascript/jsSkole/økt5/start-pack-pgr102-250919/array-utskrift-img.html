@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    
+    <div id="output-div"></div>
+    
+    <script>
+    
+    let outputDiv = document.getElementById("output-div");
+
+    var destinationArray = ["lasvegas.jpg", "london.jpg","paris.jpg", "tenerife.jpg","tokyo.jpg"];
+
+    destinationArray.push("Halllla");
+    destinationArray.push("New York");
+
+    destinationArray.unshift("Berlin");
+    destinationArray.unshift("Madrid");
+
+    let numberOfDestination = destinationArray.length;
+
+    for (var i = 0; i < destinationArray.length; i++){
+        outputDiv.innerHTML += `
+        <h3> ${destinationArray[i]}</h3>  
+        <img src="images/${destinationArray[i]}" alt="">
+        
+        `;
+
+    }
+    
+    </script>
+    
+</body>
+</html>

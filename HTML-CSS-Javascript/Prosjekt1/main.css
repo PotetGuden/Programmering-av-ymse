@@ -1,0 +1,124 @@
+body{
+    font-family: arial;
+    background-attachment:fixed;
+    
+}
+
+h1 {
+    color: black;
+
+}
+
+a{
+    color:blue;
+}
+
+p{
+    color:black;
+    padding: 7px;
+}
+
+.firstP {
+    background-color:grey;
+}
+
+.second{
+    background: none;
+    color:blue;
+}
+
+
+/* "wrapper */
+.wtf{
+    background:white;
+    padding: 100px;
+    margin: 5% 20%;
+    border-style: solid;
+    border-color:black;
+    opacity: 0.9;
+    
+    
+}
+
+footer{
+    text-align: center;
+}
+
+header {
+    padding:5px;
+}
+
+
+#hoved {
+    text-align:center;
+
+    /* Sjekk html comment, denne er relatert til index.html. og gir meg en spesiell type font. */
+    font-family: 'lobster', cursive;
+
+    /* første px er hvor mye den skal mot høyre, neste er nedover, neste er blur, også farge, "er en til men husker ikke hva det var"    */
+    text-shadow: 4px 2px 3px grey;
+    
+    
+}
+
+.linker {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  .bildeTestUl{
+      list-style-image: url("https://www.digginet.com/wp-content/uploads/2016/02/icon_based_logo.png");     
+      list-style-type:none;
+      padding:20px;
+      margin-left:0px;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Bytter fargen når man holder over linkene til lister*/
+  li a:hover {  
+    background-color: #111;
+  }
+  /*  Bytter farger på linker generelt når man holder over.*/
+  a:hover {
+      background-color: #FAEBD7;
+  }
+
+
+  /* dette gjør man hvis man bare vil endre en del av noe som kommer etter noe annet. aka endre hvis P-tag kommer etter en h1-tag */
+  h1+p {
+      margin-top= 0;
+  }
+
+  .rick {
+      float:right;
+      line-height:2;
+      font-size: 120%;
+      margin: 0;
+  }
+
+  .rick_gif {
+      border: 2px solid black;
+      margin:10px;
+      float:right;
+  }
+  /* 
+  
+  FLOAT BRUKER MAN HVIS MAN VIL SMUDE UT NOE INNENFOR SAMME LINJE,FEKS LEGGE ET BILDE SIDEN AV NOE TEKST. 
+  
+  
+  
+  */

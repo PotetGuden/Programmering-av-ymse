@@ -1,0 +1,30 @@
+<h1 id="status-h1"></h1>
+
+<script>
+
+
+    let password = "OmpaLompa";
+
+    let userInput = prompt("Hei! Hva er passordet?");
+
+    let statusH1 = document.getElementById("status-h1");
+
+    if(userInput === password){
+        alert("Du har kommet inn");
+        statusH1.innerHTML = "Gratulerer du har kommet inn";
+    } else {
+        alert("Du har skrevet feil passord, og vil dermed ikke komme inn");
+        statusH1.innerHTML = "Du suger, gå bort"
+    }
+
+
+    //TEMPLATE LITERALS ER AT MAN KAN LEGGE INN VARIABEL I EN TEKST VED Å BRUKE ${var}
+
+    // hvis man svarer fler enn 5 ganger så executer noe annet! FIKS DENNE!
+    // for svar > 5 in userInput {
+    // }
+
+
+    //for i in ()
+
+</script>
