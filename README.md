@@ -12,7 +12,7 @@ Git commands
     //Laster ned en copy til pcen din, av den url du setter inn
     git clone "url til repository"
 
-    // cd - change-directory, bytter directory i bash/cmd
+    // cd - change-directory, bytter directory i bash/cmd. (kan også bruke cd .. for å hoppe opp en mappe)
     cd "navn på mappe man vil til"
 
     //lister alle mapper under den mappen man er i, sjekk over for å teste litt.
